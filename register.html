@@ -1,0 +1,35 @@
+<?php
+session_start();
+?>
+<html>
+<head>
+	<title> HireMe Job Board</title>
+	<link rel="stylesheet" type="text/css" href="styles/index.css"/>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"></script>
+	<h3>HireMe</h3>
+</head>
+
+<body>
+	<div class=sidebar>
+		<div id="A"><img id="hom" src="hom.png"><a href= "home.html"> <b>Home</b></a></div>
+		<div id="B"><img id="user" src="user.png"><a href= "register.html"> <b>Add User</b></a> </div>
+		<div id="C"><img id="job" src="job.png"><a href= "newjob.html"> <b>New Job</b></a></div>
+		<div id="D"><img id="out" src="out.png"><a href= "index.html"> <b>Log Out</b></a></div>
+	</div>
+	
+	<h1> New User</h1>
+	<div id="form2">
+		<form  id="form2" name="register" method="post" action="main.php" onsubmit="">
+			<div>Firstname<input type="text" name="fname" /></div><br>
+			<div>Lastname<input type="text" name="lname" /></div><br>
+			<div>Password<input type="password" name="pass" /></div><br>
+			<div>Email <input type="email" name="email" /></div><br>
+			<div>Telephone<input type="text" name="phone" /></div><br>
+			<div><input type="submit" value="SUBMIT" /></div>
+	</div>
+
+</body>
+
+
+
+</html>

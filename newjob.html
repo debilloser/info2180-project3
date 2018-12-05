@@ -1,0 +1,42 @@
+<?php
+session_start();
+?>
+<html>
+<head>
+	<title> HireMe Job Board</title>
+	<link rel="stylesheet" type="text/css" href="styles/index.css"/>
+	<script src="https://code.jquery.com/jquery-3.1.1.min.js" type="text/javascript"></script>
+	<h3>HireMe</h3>
+</head>
+
+<body>
+	<div class=sidebar>
+		<div id="A"><img id="hom" src="hom.png"><a href= "home.html"> <b>Home</b></a></div>
+		<div id="B"><img id="user" src="user.png"><a href= "register.html"> <b>Add User</b></a> </div>
+		<div id="C"><img id="job" src="job.png"><a href= "newjob.html"> <b>New Job</b></a></div>
+		<div id="D"><img id="out" src="out.png"><a href= "index.html"> <b>Log Out</b></a></div>
+	</div>
+	
+	<h1> New Job</h1>
+	<div id="form2">
+		<form  id="form2" name="register" method="post" action="newjob.php" onsubmit="">
+			<div>Job Title<input type="text" name="jobt" placeholder="e.g Senior Designer or Product Manager" /></div><br>
+			<div>Job Description<input id= "longtext" ="text" name="desc" /></div><br>
+			<div>Category<select name="cat">
+				<option value="0" selected="selected"> Select a category</option>
+				<option value="1">Design</option>
+				<option value="2">Programming</option>
+				<option value="3">DevOps & Sysadmin</option>
+				<option value="4">Customer Support</option>
+				<option value="5">Sales & Marketing</option></select/>
+			</div>
+			<div>Company <input type="text" name="com" /></div><br>
+			<div>Job Location<input type="text" name="jobloc" placeholder="e.g Kingston, Jamaica" /></div><br>
+			<div><input type="submit" value="SUBMIT" /></div>
+	</div>
+
+</body>
+
+
+
+</html>
